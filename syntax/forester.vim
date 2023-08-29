@@ -3,7 +3,7 @@ if exists('b:current_syntax')
 endif
 
 
-syntax match foresterBackslash /\\\h\+/
+syntax match foresterBackslash /\\\a\+/
 syntax match foresterLinkHref /\v\[[^]]*]\(\zs[^)]*\ze\)/
 
 highlight default link foresterBackslash Keyword
