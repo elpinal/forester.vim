@@ -3,7 +3,7 @@ if exists('b:current_syntax')
 endif
 
 
-syntax match foresterBackslash /\\\a\+/
+syntax match foresterBackslash /\v\\[0-9A-Za-z]+/
 syntax match foresterLinkHref /\v\[[^]]*]\(\zs[^)]*\ze\)/
 syntax match foresterComment /%.*$/
 
